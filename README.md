@@ -1,5 +1,5 @@
 ## Setup
-1. `git clone --recurse-submodules`
+1. `git clone --recurse-submodules https://github.com/garzaa/parry.git`
 
 ## Basics
 - everything is imported as 32 pixels per unit

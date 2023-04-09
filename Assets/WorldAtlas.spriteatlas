@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WorldAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 972ad88535a1d3a4fbb51ad3afe8d029, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 6836142153017594085, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 5661049957185019681, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 8474981341611232960, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 2450565909728410856, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -3165705482850905674, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -5774996654182199871, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 4443897450750874535, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -8655818156195654838, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 6346318911325233748, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 1840059084634729652, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 1127223760459724062, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 2008176328888099268, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -1816755548282093316, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 6501298950303736333, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 6967745887157389618, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -2374222918679686493, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -5027509340213622084, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -5906598218874874896, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -761933863725385812, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -7010260848350730462, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: -3181606171480048652, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
+  - {fileID: 21300000, guid: ca35530aa44512c4da1a8a75c59423a3, type: 3}
+  - {fileID: 21300000, guid: b293f06c414ff66498748f6cd2e4ad47, type: 3}
+  - {fileID: 1362740693, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
+  - {fileID: -793498787, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
+  - {fileID: -435460079, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
+  - {fileID: -436686728, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
+  - {fileID: -1614653597, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
+  - {fileID: -1923709256, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
+  - {fileID: -1208431192, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 20
+  - 18
+  - 19
+  - 14
+  - 15
+  - 16
+  - 17
+  - 10
+  - 11
+  - 12
+  - 13
+  - 5
+  - 4
+  - 7
+  - 6
+  - 1
+  - 0
+  - 3
+  - 2
+  - 9
+  - 8
+  - stoneblock_template
+  - guy
+  - stoneblock_extras_0
+  - stoneblock_extras_1
+  - stoneblock_extras_2
+  - stoneblock_extras_3
+  - stoneblock_extras_4
+  - stoneblock_extras_6
+  - stoneblock_extras_7
+  m_RenderDataMap: {}
+  m_Tag: WorldAtlas
+  m_IsVariant: 0

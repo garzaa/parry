@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ecf085d4889a62488f7a51ea912f029, type: 3}
+  m_Script: {fileID: 11500000, guid: 09cc3074c682c5b419d59bce7772a6fa, type: 3}
   m_Name: stoneblock_template_generatedTile
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 1840059084634729652, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
@@ -386,4 +386,9 @@ MonoBehaviour:
     - {x: 0, y: -1, z: 0}
     m_RuleTransform: 2
   tileObject: {fileID: 0}
-  tileWith: []
+  tileWith:
+  - {fileID: 11400000, guid: e9b7bf7fd0637f640b464eae50897e4e, type: 2}
+  - {fileID: 11400000, guid: 8b43c40dbb58f114cb5fd1921f478729, type: 2}
+  - {fileID: 11400000, guid: 597b8b363e37d254586ed2877ab880c5, type: 2}
+  - {fileID: 11400000, guid: 19e83ddbfc8575e41a14af1f22e5422e, type: 2}
+  - {fileID: 11400000, guid: 84d46688f4049e442919b8058636794b, type: 2}
