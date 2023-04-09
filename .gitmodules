@@ -1,0 +1,3 @@
+[submodule "Assets/Scripts/vaporcore"]
+	path = Assets/Scripts/vaporcore
+	url = https://github.com/garzaa/vaporcore.git
