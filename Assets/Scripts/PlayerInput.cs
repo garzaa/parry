@@ -19,7 +19,7 @@ public class PlayerInput : MonoBehaviour {
     }
 
     void Start() {
-        player.AddInputEventDelegate(ShowHideMouse, UpdateLoopType.Update);
+        if (!Application.isEditor) player.AddInputEventDelegate(ShowHideMouse, UpdateLoopType.Update);
         player.controllers.hasKeyboard = true;
         player.controllers.AddController(ControllerType.Joystick, 0, true);
     }

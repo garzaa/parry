@@ -26,6 +26,10 @@ public class EntityController : EntityBase {
 	bool inputBackwards;
 	bool inputForwards;
 
+	float angleLastStep = 0;
+
+	float jumpTime = 0;
+
 	ToonMotion toonMotion;
 	
 	public bool frozeInputs { 
@@ -48,6 +52,8 @@ public class EntityController : EntityBase {
 		base.Update();
 		Move();
 		Jump();
+		CheckFlip();
+		RotateToGround();
 	}
 
 	void Move() {
@@ -80,11 +86,15 @@ public class EntityController : EntityBase {
 	void Jump() {
 		if (groundData.grounded && input.ButtonDown(Buttons.JUMP)) {
 			rb2d.velocity = new Vector2(rb2d.velocity.x, movement.jumpSpeed);
+			JumpDust();
+			jumpTime = Time.unscaledTime;
 		}
 	}
 
 	void FixedUpdate() {
+		groundCheck.Check();
 		ApplyMovement();
+		angleLastStep = groundData.normalRotation;
 	}
 
 	void ApplyMovement() {
@@ -95,15 +105,26 @@ public class EntityController : EntityBase {
             rb2d.velocity = new Vector2(rb2d.velocity.x * (1 - (f*f*fMod)), rb2d.velocity.y);
         }
 
+		if ((groundData.grounded || groundData.leftGround) && (angleLastStep != groundData.normalRotation) && (Time.unscaledTime - jumpTime > 0.5f)) {
+			// if they've just moved onto a lower slope
+			// todo: check if they haven't just jumped
+			float a = groundData.normalRotation - angleLastStep;
+			rb2d.velocity = rb2d.velocity.Rotate(a);
+		}
+
         if (inputX!=0) {
 			if (!speeding || (movingForwards && inputBackwards) || (movingBackwards && inputForwards)) {
 				if (groundData.grounded) {
 					// if ground is a platform that's been destroyed/disabled
 					float f = groundData.groundCollider != null ? groundData.groundCollider.friction : movement.airFriction;
-					rb2d.AddForce(Vector2.right * rb2d.mass * movement.groundAccel * inputX * f*f);
+					Vector2 v = Vector2.right * rb2d.mass * movement.groundAccel * inputX * f*f;
+					v = v.Rotate(groundData.normalRotation);
+					rb2d.AddForce(v);
 				} else {	
 					float attackMod = inAttack ? 0.5f : 1f;
-					rb2d.AddForce(Vector2.right * rb2d.mass * movement.airAccel * inputX * airControlMod * attackMod);
+					Vector2 v = Vector2.right * rb2d.mass * movement.airAccel * inputX * airControlMod * attackMod;
+					v = v.Rotate(groundData.normalRotation);
+					rb2d.AddForce(v);
 				}
 			}
         } else {
@@ -117,11 +138,13 @@ public class EntityController : EntityBase {
             }
         }
 
+		Debug.DrawLine(transform.position, transform.position + (Vector3) Vector2.up.Rotate(groundData.normalRotation), Color.red);
+
         if (speeding) {
             SlowOnFriction();
         }
 
-		if (rb2d.velocity.y < movement.maxFallSpeed && !inAttack) {
+		if (!groundData.grounded && rb2d.velocity.y < movement.maxFallSpeed && !inAttack) {
 			rb2d.velocity = new Vector2(rb2d.velocity.x, movement.maxFallSpeed);
 		}
 
@@ -130,12 +153,39 @@ public class EntityController : EntityBase {
 		if (rb2d.velocity.y<0 && (groundData.distance)<collider2d.bounds.extents.y) {
 			// then snap to its top
 			float diff = collider2d.bounds.extents.y - groundData.distance;
-			rb2d.MovePosition(rb2d.position + ((diff+0.1f) * Vector2.up));
+			// rb2d.MovePosition(rb2d.position + ((diff+0.1f) * Vector2.up));
 			// cancel downward velocity
 			rb2d.velocity = new Vector2(
 				rb2d.velocity.x,
 				0.1f
 			);
+		}
+	}
+
+	void CheckFlip() {
+		if (frozeInputs) return;
+		if (inputBackwards && movingForwards) return;
+
+        if (facingRight && inputX<0) {
+            Flip();
+        } else if (!facingRight && inputX>0) {
+            Flip();
+        }
+    }
+
+	void RotateToGround() {
+		// if they flip on a slope, we want the rotation to instnatly snap
+		if (groundData.grounded) {
+			float curr = playerRig.transform.eulerAngles.z;
+			float dest = groundData.normalRotation;
+			float a = Mathf.MoveTowardsAngle(curr, dest, 360 * Time.deltaTime);
+
+			if (Time.unscaledTime < flipTime+0.2f) {
+				a = groundData.normalRotation;
+			}
+			playerRig.transform.rotation = Quaternion.Euler(new Vector3(0, 0, a));
+		} else {
+			playerRig.transform.rotation = Quaternion.identity;
 		}
 	}
 }
