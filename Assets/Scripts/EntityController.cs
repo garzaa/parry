@@ -138,14 +138,4 @@ public class EntityController : EntityBase {
 			);
 		}
 	}
-
-	void FlipToWall() {
-		if (inAttack) return;
-		if (facingRight && wallData.direction>0) {
-			Flip();
-		} else if (!facingRight && wallData.direction<0) {
-			Flip();
-		}
-		toonMotion?.ForceUpdate();
-	}
 }

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71c877b55a250d469106daf0d8cc3d9, type: 3}
   m_Name: PlayerMovement
   m_EditorClassIdentifier: 
-  runSpeed: 5
-  groundAccel: 100
-  airAccel: 70
+  runSpeed: 3
+  groundAccel: 50
+  airAccel: 25
   jumpSpeed: 4
   airFriction: 0.3
   shortHopCutoff: 0
