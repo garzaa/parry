@@ -31,6 +31,7 @@ public class EntityController : EntityBase {
 	float jumpTime = 0;
 
 	ToonMotion toonMotion;
+	float landingRecovery = 0;
 	
 	public bool frozeInputs { 
 		get {
@@ -175,6 +176,13 @@ public class EntityController : EntityBase {
         animator.SetBool("Grounded", groundData.grounded);
         animator.SetFloat("YSpeed", rb2d.velocity.y);
         animator.SetFloat("XSpeedMagnitude", Mathf.Abs(rb2d.velocity.x));
+
+		if (groundData.hitGround) {
+			landingRecovery = -1;
+		}
+
+		landingRecovery = Mathf.MoveTowards(landingRecovery, 0, 4f * Time.deltaTime);
+		animator.SetFloat("LandingRecovery", landingRecovery);
     }
 
 	void CheckFlip() {
@@ -189,7 +197,7 @@ public class EntityController : EntityBase {
     }
 
 	void RotateToGround() {
-		// if they flip on a slope, we want the rotation to instnatly snap
+		// if they flip on a slope, we want the rotation to instantly snap
 		if (groundData.grounded) {
 			float curr = playerRig.transform.eulerAngles.z;
 			float dest = groundData.normalRotation;
