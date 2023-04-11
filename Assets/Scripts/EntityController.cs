@@ -54,7 +54,15 @@ public class EntityController : EntityBase {
 		Jump();
 		CheckFlip();
 		RotateToGround();
+		UpdateAnimator();
 	}
+
+	void FixedUpdate() {
+		groundCheck.Check();
+		ApplyMovement();
+		angleLastStep = groundData.normalRotation;
+	}
+
 
 	void Move() {
 		inputX = input.HorizontalInput();
@@ -81,6 +89,13 @@ public class EntityController : EntityBase {
 		if (groundData.ledgeStep && !speeding && !input.HasHorizontalInput()) {
 			rb2d.velocity = new Vector2(0, rb2d.velocity.y);
 		}
+
+		// don't slide on slopes
+		if (!movingBackwards && !movingForwards && groundData.normalRotation != 0) {
+			if (rb2d.velocity.sqrMagnitude < 0.1) {
+				rb2d.velocity = Vector2.zero;
+			}
+		}
 	}
 
 	void Jump() {
@@ -88,13 +103,8 @@ public class EntityController : EntityBase {
 			rb2d.velocity = new Vector2(rb2d.velocity.x, movement.jumpSpeed);
 			JumpDust();
 			jumpTime = Time.unscaledTime;
+			animator.SetTrigger("Jump");
 		}
-	}
-
-	void FixedUpdate() {
-		groundCheck.Check();
-		ApplyMovement();
-		angleLastStep = groundData.normalRotation;
 	}
 
 	void ApplyMovement() {
@@ -123,7 +133,6 @@ public class EntityController : EntityBase {
 				} else {	
 					float attackMod = inAttack ? 0.5f : 1f;
 					Vector2 v = Vector2.right * rb2d.mass * movement.airAccel * inputX * airControlMod * attackMod;
-					v = v.Rotate(groundData.normalRotation);
 					rb2d.AddForce(v);
 				}
 			}
@@ -161,6 +170,12 @@ public class EntityController : EntityBase {
 			);
 		}
 	}
+
+	void UpdateAnimator() {
+        animator.SetBool("Grounded", groundData.grounded);
+        animator.SetFloat("YSpeed", rb2d.velocity.y);
+        animator.SetFloat("XSpeedMagnitude", Mathf.Abs(rb2d.velocity.x));
+    }
 
 	void CheckFlip() {
 		if (frozeInputs) return;

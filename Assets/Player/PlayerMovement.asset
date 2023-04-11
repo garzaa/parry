@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerMovement
   m_EditorClassIdentifier: 
   runSpeed: 3
-  groundAccel: 100
+  groundAccel: 150
   airAccel: 25
   jumpSpeed: 4
   airFriction: 0.4

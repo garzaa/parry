@@ -1,0 +1,531 @@
+fileFormatVersion: 2
+guid: d1845861f87d1564c84f7ee0b6a3ae6c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 80
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.40000004, y: 0.15384616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b8acdae88b50d41b4a2bb616868b86
+      internalID: 1353264241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 56
+        width: 18
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5555556, y: 0.26086956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a118b3236003c247a00962298ecd956
+      internalID: 1200038079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hips
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 46
+        width: 12
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c75d9be460d7444da7db158601e3bd2
+      internalID: -2076707594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Near Thigh
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 36
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90af497673add14b8beff0d7989680f
+      internalID: -740105675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Far Thigh
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 36
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65aa57faac126e040b80e2d86c6df29e
+      internalID: -86173342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Near Calf
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 26
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c427dbeb20b48439f7bf237ef5ec28
+      internalID: -273800545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Far Calf
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 26
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960faa0f57e021743b1e03f96c8fd57a
+      internalID: -856056783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Far Foot
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 20
+        width: 8
+        height: 5
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed28e207940811b4f99ec66cfcb8c0d5
+      internalID: -782879005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Near Foot
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 20
+        width: 7
+        height: 5
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2afa8294c0c2254b8a179ff77e81266
+      internalID: 819534746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Near Bicep
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 65
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a41fdcc740dc8489308da58c67efe1
+      internalID: 382186436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Near Forearm
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 53
+        width: 5
+        height: 9
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4932311d269474b862365afc367f40
+      internalID: -2143326769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Far Forearm
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 53
+        width: 5
+        height: 9
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b4ddebfe5d25a4298e4289466199f8
+      internalID: -1049794955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Far Bicep
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 65
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb21405da13db8418a90e4e722238fe
+      internalID: 1282089462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand White
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 71
+        width: 9
+        height: 7
+      alignment: 9
+      pivot: {x: 0.22222222, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f175c0199c3af409beee016be3e5d0
+      internalID: -564981144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Near Hand
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 61
+        width: 9
+        height: 7
+      alignment: 9
+      pivot: {x: 0.22222222, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320ba407639e34b458bde30271dd4d3e
+      internalID: -1680724145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Near Hand Fingers
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.22222222, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ebd8d6cb4149e4188c65efbb7565b3
+      internalID: -1343730920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Far Hand
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 61
+        width: 9
+        height: 7
+      alignment: 9
+      pivot: {x: 0.22222222, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfed65d762e3fa4ba996739500bd089
+      internalID: 404609652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Far Hand Fingers
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 50
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.22222222, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3b27beb77b7f4468980010e7d5d0d3
+      internalID: 755965639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Far Hand: 404609652
+      Far Calf: -856056783
+      Near Forearm: -2143326769
+      Head: 1353264241
+      Far Forearm: -1049794955
+      Hand White: -564981144
+      Near Calf: -273800545
+      Near Hand Fingers: -1343730920
+      Far Bicep: 1282089462
+      Near Hand: -1680724145
+      Far Foot: -782879005
+      Far Hand Fingers: 755965639
+      Chest: 1200038079
+      Near Foot: 819534746
+      Far Thigh: -86173342
+      Hips: -2076707594
+      Near Thigh: -740105675
+      Near Bicep: 382186436
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
