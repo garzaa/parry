@@ -15,7 +15,7 @@ MonoBehaviour:
   runSpeed: 3
   groundAccel: 150
   airAccel: 25
-  jumpSpeed: 4
+  jumpSpeed: 3
   airFriction: 0.4
   shortHopCutoff: 0
   maxFallSpeed: -10

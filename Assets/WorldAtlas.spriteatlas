@@ -72,6 +72,10 @@ SpriteAtlas:
   - {fileID: -7010260848350730462, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
   - {fileID: -3181606171480048652, guid: 39d4d987b02cef54b84b7bafd0ec29ec, type: 3}
   - {fileID: 21300000, guid: ca35530aa44512c4da1a8a75c59423a3, type: 3}
+  - {fileID: 14618246, guid: e4c16dca49a8c4d49828cfab6b109dbb, type: 3}
+  - {fileID: 1282918620, guid: e4c16dca49a8c4d49828cfab6b109dbb, type: 3}
+  - {fileID: 657612302, guid: e4c16dca49a8c4d49828cfab6b109dbb, type: 3}
+  - {fileID: 1616070672, guid: e4c16dca49a8c4d49828cfab6b109dbb, type: 3}
   - {fileID: 1362740693, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
   - {fileID: -793498787, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
   - {fileID: -435460079, guid: ab2a350da6f3f9348a28843d320e1356, type: 3}
@@ -102,6 +106,10 @@ SpriteAtlas:
   - 9
   - 8
   - stoneblock_template
+  - bg_3
+  - bg_2
+  - bg_1
+  - bg_0
   - stoneblock_extras_0
   - stoneblock_extras_1
   - stoneblock_extras_2

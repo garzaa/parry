@@ -100,8 +100,8 @@ public class EntityController : EntityBase {
 	}
 
 	void Jump() {
-		if (groundData.grounded && input.ButtonDown(Buttons.JUMP)) {
-			rb2d.velocity = new Vector2(rb2d.velocity.x, movement.jumpSpeed);
+		if (groundData.grounded && input.ButtonDown(Buttons.JUMP) && Time.unscaledTime > jumpTime+0.2f) {
+			rb2d.velocity = new Vector2(rb2d.velocity.x, movement.jumpSpeed + rb2d.velocity.y);
 			JumpDust();
 			jumpTime = Time.unscaledTime;
 			animator.SetTrigger("Jump");
